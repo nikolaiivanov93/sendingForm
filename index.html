@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form__body">
+                <h1 class="form__title">Отправка данных на почту</h1>
+                <div class="form__item">
+                    <label for="formName" class="form__label">Имя*</label>
+                    <input id="formName" type="text" name="name" class="form__input _req">
+                </div>
+                <div class="form__item">
+                    <label for="formEmail" class="form__label">E-mail*</label>
+                    <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Android & Iphone</div>
+                    <div class="options">
+                        <div class="options__item">
+                            <input id="formRightHeanded" checked type="radio" value="Android" name="hand" class="options__input">
+                            <label for="formRightHeanded" class="options__label"><span>Android</span> </label>
+                        </div>
+                        <div class="options__item">
+                            <input id="formLeftHeanded" type="radio" value="Iphone" name="hand" class="options__input">
+                            <label for="formLeftHeanded" class="options__label"><span>Iphone</span> </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label for="formMessage" class="form__label">Сообщение:</label>
+                    <textarea name="message" id="formMessage" class="form__input"></textarea>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Сколько вы уже пользуетесь данной платформой?</div>
+                    <select name="age" class="select">
+                        <option value="до 3 лет" selected="selected">до 3 лет</option>
+                        <option value="от 3 до 5 лет">от 3 до 5 лет</option>
+                        <option value="У меня windows phone">У меня windows phone</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Прикрепить файл</div>
+                    <div class="file">
+                        <div class="file__item">
+                            <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                            <div class="file__button">Выбрать</div>
+                        </div>
+                        <div id="formPreview" class="file__preview"></div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="checkbox">
+                        <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                        <label for="formAgreement" class="checkbox__label"><span>Я даю своле согласие на обработку персональных данных</span></label>
+                    </div>
+                </div>
+                <button type="submit" class="form__button">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
